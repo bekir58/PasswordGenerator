@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov 11 21:53:15 2022
 
 @author: bekir
+
 """
 
 import string 
@@ -16,11 +16,11 @@ while True:
     print ("--------Password Generator--------")
     
     
-    länge = int (input("Wie lang soll Ihrer Password sein: "))
+    length  = int (input("Geben Sie bitte gewünschte länge der Password ein: "))
     
     inhalt = string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation
     
-    my_random = random.sample(inhalt, länge)
+    my_random = random.sample(inhalt, length)
     
     password = "".join(my_random)
     
